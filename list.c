@@ -93,7 +93,7 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-    Node* n = list->current;
+    Node* n = list->head;
 
     if (list->current == NULL) return NULL;
 
