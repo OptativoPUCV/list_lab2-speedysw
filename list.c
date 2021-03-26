@@ -37,11 +37,10 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-  List *lista = (List*) malloc(sizeof(List));
-  list->head = NULL;
-  list->tail = NULL;
-  list->current = NULL;
-    return lista;
+  if(list->head && list->head->data){
+    list->current=list->head; 
+  }
+  return (void *)list->current->data;
 }
 
 void * nextList(List * list) {
