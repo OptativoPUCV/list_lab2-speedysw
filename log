@@ -1,0 +1,16 @@
+Fri Mar 26 06:15:20 UTC 2021: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘firstList’:
+list.c:37:9: error: unused variable ‘lista’ [-Werror=unused-variable]
+   List *lista = (List*) malloc(sizeof(List));
+         ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+Fri Mar 26 06:15:28 UTC 2021: 
+ list.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+ tests:  0|6
+total_score: 0/70
+c569efc
