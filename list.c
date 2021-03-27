@@ -99,7 +99,7 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
     Node* n = list->current;
-    const void *data = list->current->data;
+    const void *x = list->current->data;
 
     // if (data == NULL) return NULL;
 
@@ -117,7 +117,7 @@ void * popCurrent(List * list) {
   
    
    free(n);
-    return (void* )data;
+    return (void* )x;
 }
 
 void cleanList(List * list) {
