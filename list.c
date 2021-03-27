@@ -117,7 +117,7 @@ void * popCurrent(List * list) {
     
     free(n);
 
-    return (void *)aux->data;
+    return (void *)aux;
 }
 
 void cleanList(List * list) {
