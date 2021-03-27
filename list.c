@@ -114,9 +114,9 @@ void * popCurrent(List * list) {
     n->next = list->tail->prev;
     list->tail->next=NULL;
 
-    void *aux = list->current;
+    // void *aux = list->current;
 
-    return  (void*) aux;
+    return  n;
 }
 
 void cleanList(List * list) {
