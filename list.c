@@ -101,7 +101,7 @@ void * popCurrent(List * list) {
     Node* n = list->current;
     const void *data = list->current->data;
 
-    if (data == NULL) return NULL;
+    // if (data == NULL) return NULL;
 
     if(n->prev != NULL){
       n->prev->next=n->next;
@@ -116,7 +116,6 @@ void * popCurrent(List * list) {
    list->tail->next=NULL;
     
    // free(n);
-
     return (void* )data;
 }
 
