@@ -29,7 +29,6 @@ Node * createNode(const void * data) {
 }
 
 List * createList() {
-
   List *lista = (List*) malloc(sizeof(List));
   lista->head = NULL;
   lista->tail = NULL;
@@ -79,11 +78,11 @@ void pushBack(List * list, const void * data) {
 
 void pushCurrent(List * list, const void * data) {
   Node *n = createNode(data);
-  if(list->current != NULL){
+  //if(list->current != NULL){
     list->current->next = n;
     n->prev = list->current;
     list->tail=n; 
-  }
+  //}
 }
 
 void * popFront(List * list) {
